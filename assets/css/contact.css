@@ -1,0 +1,126 @@
+.contact {
+    background-color: #f7f8fc;
+    padding: 2em 4em;
+}
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.contact-form {
+    flex-basis: 35%;
+    padding: 30px;
+    box-shadow: 0 4px 11px -5px rgba(0,0,0,.4);
+    background-color: #fff;
+}
+
+.input-group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.contact-input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #000;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+.contact-input::placeholder {
+    color: transparent;
+}
+.contact-input:placeholder-shown ~ .input-label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+}
+
+.input-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+}
+
+.contact-input:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #9e1f1e, #000);
+    border-image-slice: 1;
+}
+.contact-input:focus ~ .input-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    font-weight: 300;
+}
+.contact-form-button {
+    flex-grow: 1;
+    cursor: pointer;
+    position: relative;
+    padding: 0.3em 1em;
+    color: black;
+    background-color: white;
+    font-size: 1.5rem;
+    text-shadow: rgba(0, 0, 0, 0.1) 2px 2px;
+    transition: all 0.3s;
+    border: 2px solid #9b9b9b;
+}
+.contact-form-button:hover {
+    color: white;
+    outline: none;
+    text-shadow: none;
+    background-color: #000;
+    padding: 0.3em 1.5em;
+    border: 2px solid transparent;
+}
+.contact-form-button:focus {
+    outline: none;
+}
+.contact-form-button-box {
+    text-align: center;
+    margin-top: 1em;
+}
+
+
+.contact-input:required, .contact-input:invalid {
+    box-shadow: none;
+}
+
+.contact-info {
+    flex-basis: 65%;
+    padding: 30px;
+}
+.contact-info-header {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 992px) {
+    .contact {
+        padding: 2em 1em;
+    }
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .contact-form {
+        flex-basis: 100%;
+        order: 2;
+    }
+    .contact-info {
+        flex-basis: 100%;
+        order: 1;
+    }
+}

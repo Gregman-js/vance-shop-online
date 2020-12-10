@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+
+.hero {
+    height: 100vh;
+    position: relative;
+}
+body {
+    background-image: url('../img/hero.jpg');
+    background-size: cover;
+    background-position: 50% 60%;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.hero-text-title {
+    font-size: 5em;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+section.prepand {
+    text-align: center;
+    background: #fff;
+    padding: 3em 0;
+}
+section.prepand p {
+    width: 70%;
+    color: #444;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.space-section {
+    height: 300px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+a.product-card {
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.product-card:active, .product-card:focus, .product-card:hover {
+    box-shadow: 0 1px 8px 0 rgba(0,0,0,.08);
+}
+.product-card .product-card-image {
+    flex: 1 1 auto;
+}
+.product-card .product-card-image img {
+    width: 100%;
+    max-height:400px;
+    object-fit: cover;
+    height: 100%;
+}
+.product-card .product-card-text {
+    padding: 0 10px 10px 10px;
+    color: black;
+}
+.swiper-container .product-card .product-card-text {
+    padding: 0 10px 30px 10px;
+    color: black;
+}
+.product-card .product-card-text-subtitle {
+    text-align: center;
+    color: #555;
+}
+.product-card .product-card-price {
+    float: right;
+    color: rgba(100, 100, 100, 1);
+}
+footer .footer-content {
+    padding: 2em;
+    color: #333;
+    background-color: #ececec;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+footer .footer-content h3 {
+    margin-top: 0;
+}
+footer .footer-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+footer .footer-list li a,
+footer .footer-list li a:hover {
+    color: black;
+    text-decoration: none;
+}
+footer .copyright {
+    background: #343a40;
+    color: #dee2e6;
+    font-weight: 300;
+    padding: 0.7em 5em;
+    font-size: 0.875rem;
+}
+@media screen and (max-width: 992px) {
+    footer .footer-content {
+        flex-direction: column;
+        align-items: start;
+    }
+    footer .footer-content > div {
+        margin-bottom: 30px;
+    }
+}
