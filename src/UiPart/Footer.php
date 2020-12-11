@@ -11,7 +11,11 @@ class Footer
         <footer>
             <div class="footer-content">
                 <div>
-                    <h1>Vance</h1>
+                    <h1>
+                        <a class="main-link" href="index.php">
+                            Vance
+                        </a>
+                    </h1>
                     <p>Znajdź najlepsze buty dla siebie!</p>
                 </div>
                 <div>
@@ -32,9 +36,10 @@ class Footer
                     </ul>
                 </div>
             </div>
-            <!-- Copyright section of the footer-->
             <div class="copyright">
-                    © 2020, http://www.vence.pl<br> Zdjęcia produktów oraz ich opis nie są własnością ten strony. Stanowią materiał prezentacyjny.
+                © 2020, Grzegorz Libiszewski<br>
+                Zdjęcia produktów oraz ich opis nie są własnością ten strony. Stanowią materiał prezentacyjny. <br>
+
             </div>
         </footer>
     <?php }

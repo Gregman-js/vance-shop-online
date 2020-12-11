@@ -86,6 +86,14 @@ a.product-card {
     float: right;
     color: rgba(100, 100, 100, 1);
 }
+footer .footer-content .main-link {
+    color: #333;
+    text-decoration: none;
+}
+footer .footer-content .main-link:hover {
+    color: #333;
+    text-decoration: none;
+}
 footer .footer-content {
     padding: 2em;
     color: #333;

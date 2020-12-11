@@ -19,7 +19,7 @@ if (null === $category) {
 <!doctype html>
 <html lang="pl">
 <head>
-    <title>Vance.pl - obuwie</title>
+    <title>Vance.pl - buty <?= $category['name'] ?></title>
     <link rel="stylesheet" href="assets/css/category.css">
     <?php Navbar::getMeta() ?>
 </head>

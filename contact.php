@@ -9,7 +9,7 @@ use App\UiPart\Navbar;
 <!doctype html>
 <html lang="pl">
 <head>
-    <title>Vance.pl - obuwie</title>
+    <title>Vance.pl - kontakt</title>
     <?php Navbar::getMeta() ?>
     <link rel="stylesheet" href="assets/css/contact.css">
 </head>

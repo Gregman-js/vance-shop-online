@@ -19,7 +19,7 @@ if (null === $product) {
 <!doctype html>
 <html lang="pl">
 <head>
-    <title>Vance.pl - obuwie</title>
+    <title>Vance.pl - <?= $product['name'] ?></title>
     <link rel="stylesheet" href="assets/css/product.css">
     <?php Navbar::getMeta() ?>
 </head>
